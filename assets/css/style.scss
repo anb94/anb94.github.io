@@ -3,96 +3,89 @@
 
 @import "{{ site.theme }}";
 
-/* --- 1. GLOBAL DARK THEME --- */
+/* --- 1. GLOBAL SETTINGS --- */
 body {
-  /* This matches your logo background exactly */
-  background-color: #002c47 !important;
-  color: #ffffff !important; /* Default text white */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background-color: #002c47 !important; /* Matches your logo background */
+  color: #e0e0e0 !important; /* Softer white for eyes */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Remove white box wrappers usually found in this theme */
-div.wrapper {
-  background-color: #002c47 !important;
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-}
-
-/* --- 2. SIDEBAR (Left) --- */
+/* --- 2. SIDEBAR ADJUSTMENTS --- */
 header {
   background-color: #002c47 !important;
-  border: none !important; /* No border lines */
-  width: 280px; /* Standard sidebar width */
-  padding: 40px;
+  display: flex;
+  flex-direction: column; /* Allows us to reorder items */
+  padding-top: 40px;
 }
 
-/* Your Name - Cyan to pop against dark blue */
-header h1, header h1 a {
-  color: #00d4ff !important;
-  font-weight: 700;
+/* MOVES THE LOGO TO THE TOP */
+header img {
+  order: -1; /* This forces the logo to appear BEFORE the name */
+  max-width: 160px;
+  margin-bottom: 20px;
+  border-radius: 0 !important; /* Ensures no extra cropping */
+  background: transparent;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Style the Name */
+header h1 {
+  font-size: 28px;
+  color: #00d4ff !important; /* Cyan Brand Color */
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  line-height: 1.1;
 }
 
-/* Description text */
 header p {
-  color: #d0dce3 !important; /* Light grey-blue */
+  color: #aabccd !important; /* Muted blue-grey for bio */
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /* Sidebar Links */
-header ul a, header li a {
-  color: #ffffff !important; /* White links */
-  border-bottom: 1px solid transparent;
+header a {
+  color: #ffffff !important;
+  font-weight: bold;
 }
-header ul a:hover, header li a:hover {
-  color: #00d4ff !important; /* Cyan on hover */
-  border-bottom: 1px solid #00d4ff;
-}
-
-/* --- 3. THE LOGO (Seamless) --- */
-header img {
-  /* Removing the circle crop so it shows the full image */
-  border-radius: 0 !important;
-  /* Removing the border/stroke */
-  border: none !important;
-  /* No shadow needed as it blends in */
-  box-shadow: none !important;
-  
-  max-width: 200px;
-  margin-bottom: 20px;
-  background-color: transparent;
+header a:hover {
+  color: #00d4ff !important;
+  text-decoration: none;
 }
 
-/* --- 4. MAIN CONTENT (Right) --- */
+/* --- 3. MAIN CONTENT (The Fix for "Too Wide") --- */
 section {
   background-color: #002c47 !important;
-  color: #ffffff !important;
-  padding: 40px;
-  max-width: 800px; /* Readable width */
+  max-width: 700px !important; /* LIMITS WIDTH for readability */
+  padding: 40px 60px; /* Adds breathing room */
 }
 
-/* Headings in text */
+/* Typography for Content */
 section h1, section h2, section h3 {
-  color: #00d4ff !important; /* Cyan Headings */
-  border-bottom: 1px solid #004e7a; /* Subtle separator line */
+  color: #00d4ff !important;
+  border-bottom: 1px solid #004e7a;
   padding-bottom: 10px;
+  margin-top: 40px;
 }
 
-/* Links in text */
+section p {
+  font-size: 16px;
+  line-height: 1.7; /* easier to read */
+  color: #ffffff;
+}
+
 section a {
   color: #00d4ff !important;
   font-weight: bold;
 }
-section a:hover {
-  color: #ffffff !important;
-  text-decoration: none;
-}
 
-/* Blockquotes */
-blockquote {
+section blockquote {
   border-left: 4px solid #00d4ff;
-  color: #b0c4de;
-  background: #001f33; /* Slightly darker box */
-  padding: 10px 15px;
+  color: #aabccd;
+  background: #001f33;
+  padding: 15px;
+  font-style: italic;
 }
