@@ -1,0 +1,46 @@
+---
+---
+
+/* First, import the original theme styles */
+@import "{{ site.theme }}";
+
+/* Define your new colors */
+$custom-dark-blue: #002c47; /* Background color from your image */
+$custom-cyan: #00d4ff;      /* Icon color from your image */
+
+/* Override the theme's header colors */
+.page-header {
+  /* Replace the blue-green gradient with your dark blue */
+  background-image: none;
+  background-color: $custom-dark-blue;
+  
+  /* Change main title and description text to cyan */
+  color: $custom-cyan;
+}
+
+/* Ensure title and tagline are specifically cyan */
+.project-name, .project-tagline {
+  color: $custom-cyan !important;
+}
+
+/* Change the buttons at the top to match */
+.btn {
+  color: $custom-cyan;
+  border-color: $custom-cyan;
+  background-color: transparent;
+}
+
+/* Add a hover effect for the buttons */
+.btn:hover {
+  background-color: rgba(0, 212, 255, 0.15); /* Transparent cyan */
+  color: $custom-cyan;
+  border-color: $custom-cyan;
+}
+
+/* Change generic links in the body to a darker blue/cyan for readability against white */
+a {
+  color: #008bad;
+}
+a:hover {
+  color: $custom-dark-blue;
+}
