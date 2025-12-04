@@ -3,41 +3,71 @@
 
 @import "{{ site.theme }}";
 
-/* FORCE SIDEBAR COLOR */
+/* --- RESET: Clean White Professional Theme --- */
+
+/* 1. SIDEBAR: Clean White with Brand Colors */
 header {
-  background-color: #002c47 !important;
-  border-right: 1px solid #002c47;
+  background-color: #ffffff !important;
+  border-right: 1px solid #eaeaea; /* Subtle separator line */
 }
 
-/* Fix Text Colors on Sidebar */
-header h1, header h1 a, header p {
-  color: #ffffff !important;
+/* Your Name - Brand Dark Blue */
+header h1, header h1 a {
+  color: #002c47 !important;
+  font-weight: 800; /* Extra bold for impact */
+  letter-spacing: -0.5px;
 }
 
-/* Fix Link Colors on Sidebar (Cyan) */
+/* Description - Dark Grey (Easy to read) */
+header p {
+  color: #555555 !important;
+}
+
+/* Sidebar Links - Brand Cyan/Blue */
 header ul a, header li a {
-  color: #00d4ff !important;
+  color: #008bad !important; /* Readable Cyan */
+  font-weight: 600;
 }
 
-/* LOGO STYLING */
+header ul a:hover, header li a:hover {
+  color: #002c47 !important; /* Dark blue on hover */
+  text-decoration: underline;
+}
+
+/* LOGO: Make it pop off the page */
 header img {
   border-radius: 50%;
-  border: 4px solid #00d4ff; /* Cyan Ring */
+  border: 3px solid #00d4ff; /* Your Cyan Ring */
+  box-shadow: 0px 4px 15px rgba(0, 44, 71, 0.15); /* Soft shadow for depth */
   max-width: 180px;
   margin-bottom: 1.5em;
 }
 
-/* CONTENT AREA (Right Side) */
+/* --- 2. MAIN CONTENT --- */
 section {
   color: #333333;
+  font-size: 16px;
 }
 
-/* Headings in the main text */
+/* Headings in the text - Brand Dark Blue */
 section h1, section h2, section h3 {
+  color: #002c47 !important;
+  font-weight: 700;
+  margin-top: 1.5em;
+}
+
+/* Links in the text - Brand Cyan */
+section a {
+  color: #008bad;
+  font-weight: 500;
+}
+section a:hover {
   color: #002c47;
 }
 
-/* Links in the main text */
-section a {
-  color: #008bad;
+/* Make the 'Projects' section stand out */
+section h3 {
+  border-bottom: 2px solid #00d4ff; /* Cyan underline for projects */
+  padding-bottom: 5px;
+  display: inline-block;
 }
