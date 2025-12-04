@@ -3,71 +3,96 @@
 
 @import "{{ site.theme }}";
 
-/* --- RESET: Clean White Professional Theme --- */
+/* --- 1. GLOBAL DARK THEME --- */
+body {
+  /* This matches your logo background exactly */
+  background-color: #002c47 !important;
+  color: #ffffff !important; /* Default text white */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
 
-/* 1. SIDEBAR: Clean White with Brand Colors */
+/* Remove white box wrappers usually found in this theme */
+div.wrapper {
+  background-color: #002c47 !important;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* --- 2. SIDEBAR (Left) --- */
 header {
-  background-color: #ffffff !important;
-  border-right: 1px solid #eaeaea; /* Subtle separator line */
+  background-color: #002c47 !important;
+  border: none !important; /* No border lines */
+  width: 280px; /* Standard sidebar width */
+  padding: 40px;
 }
 
-/* Your Name - Brand Dark Blue */
+/* Your Name - Cyan to pop against dark blue */
 header h1, header h1 a {
-  color: #002c47 !important;
-  font-weight: 800; /* Extra bold for impact */
-  letter-spacing: -0.5px;
-}
-
-/* Description - Dark Grey (Easy to read) */
-header p {
-  color: #555555 !important;
-}
-
-/* Sidebar Links - Brand Cyan/Blue */
-header ul a, header li a {
-  color: #008bad !important; /* Readable Cyan */
-  font-weight: 600;
-}
-
-header ul a:hover, header li a:hover {
-  color: #002c47 !important; /* Dark blue on hover */
-  text-decoration: underline;
-}
-
-/* LOGO: Make it pop off the page */
-header img {
-  border-radius: 50%;
-  border: 3px solid #00d4ff; /* Your Cyan Ring */
-  box-shadow: 0px 4px 15px rgba(0, 44, 71, 0.15); /* Soft shadow for depth */
-  max-width: 180px;
-  margin-bottom: 1.5em;
-}
-
-/* --- 2. MAIN CONTENT --- */
-section {
-  color: #333333;
-  font-size: 16px;
-}
-
-/* Headings in the text - Brand Dark Blue */
-section h1, section h2, section h3 {
-  color: #002c47 !important;
+  color: #00d4ff !important;
   font-weight: 700;
-  margin-top: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Links in the text - Brand Cyan */
+/* Description text */
+header p {
+  color: #d0dce3 !important; /* Light grey-blue */
+}
+
+/* Sidebar Links */
+header ul a, header li a {
+  color: #ffffff !important; /* White links */
+  border-bottom: 1px solid transparent;
+}
+header ul a:hover, header li a:hover {
+  color: #00d4ff !important; /* Cyan on hover */
+  border-bottom: 1px solid #00d4ff;
+}
+
+/* --- 3. THE LOGO (Seamless) --- */
+header img {
+  /* Removing the circle crop so it shows the full image */
+  border-radius: 0 !important;
+  /* Removing the border/stroke */
+  border: none !important;
+  /* No shadow needed as it blends in */
+  box-shadow: none !important;
+  
+  max-width: 200px;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+/* --- 4. MAIN CONTENT (Right) --- */
+section {
+  background-color: #002c47 !important;
+  color: #ffffff !important;
+  padding: 40px;
+  max-width: 800px; /* Readable width */
+}
+
+/* Headings in text */
+section h1, section h2, section h3 {
+  color: #00d4ff !important; /* Cyan Headings */
+  border-bottom: 1px solid #004e7a; /* Subtle separator line */
+  padding-bottom: 10px;
+}
+
+/* Links in text */
 section a {
-  color: #008bad;
-  font-weight: 500;
+  color: #00d4ff !important;
+  font-weight: bold;
 }
 section a:hover {
-  color: #002c47;
+  color: #ffffff !important;
+  text-decoration: none;
 }
 
-/* Make the 'Projects' section stand out */
-section h3 {
-  border-bottom: 2px solid #00d4ff; /* Cyan underline for projects */
-  padding-bottom: 5px;
-  display: inline-block;
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #00d4ff;
+  color: #b0c4de;
+  background: #001f33; /* Slightly darker box */
+  padding: 10px 15px;
 }
