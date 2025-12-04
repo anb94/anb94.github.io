@@ -3,89 +3,79 @@
 
 @import "{{ site.theme }}";
 
-/* --- 1. GLOBAL SETTINGS --- */
+/* --- 1. GLOBAL RESET --- */
 body {
-  background-color: #002c47 !important; /* Matches your logo background */
-  color: #e0e0e0 !important; /* Softer white for eyes */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #002c47 !important;
+  color: #ffffff !important; /* Forces all standard text to white */
 }
 
-/* --- 2. SIDEBAR ADJUSTMENTS --- */
+/* --- 2. FIX INVISIBLE TEXT --- */
+/* This specific rule forces bold text to be visible */
+strong, b {
+  color: #00d4ff !important; /* Your Cyan Brand Color */
+  font-weight: 700;
+}
+
+/* --- 3. SIDEBAR (Left) --- */
 header {
   background-color: #002c47 !important;
-  display: flex;
-  flex-direction: column; /* Allows us to reorder items */
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
-/* MOVES THE LOGO TO THE TOP */
+/* Move Logo to the Top */
 header img {
-  order: -1; /* This forces the logo to appear BEFORE the name */
+  order: -1;
   max-width: 160px;
   margin-bottom: 20px;
-  border-radius: 0 !important; /* Ensures no extra cropping */
   background: transparent;
   border: none !important;
   box-shadow: none !important;
+  border-radius: 0 !important; /* Shows full image without circle crop */
 }
 
-/* Style the Name */
+/* Your Name */
 header h1 {
-  font-size: 28px;
-  color: #00d4ff !important; /* Cyan Brand Color */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-  font-weight: 800;
-  line-height: 1.1;
-}
-
-header p {
-  color: #aabccd !important; /* Muted blue-grey for bio */
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-/* Sidebar Links */
-header a {
-  color: #ffffff !important;
-  font-weight: bold;
-}
-header a:hover {
+  font-size: 26px;
   color: #00d4ff !important;
-  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;
 }
 
-/* --- 3. MAIN CONTENT (The Fix for "Too Wide") --- */
+/* Description & Links */
+header p { color: #d0dce3 !important; }
+header a { color: #ffffff !important; font-weight: normal; }
+header a:hover { color: #00d4ff !important; }
+
+/* --- 4. MAIN CONTENT (Right) --- */
 section {
   background-color: #002c47 !important;
-  max-width: 700px !important; /* LIMITS WIDTH for readability */
-  padding: 40px 60px; /* Adds breathing room */
+  max-width: 750px !important; /* Fixes the "too wide" issue */
+  padding: 40px;
 }
 
-/* Typography for Content */
+/* Headers */
 section h1, section h2, section h3 {
   color: #00d4ff !important;
   border-bottom: 1px solid #004e7a;
   padding-bottom: 10px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
+/* Normal Paragraph Text */
 section p {
-  font-size: 16px;
-  line-height: 1.7; /* easier to read */
-  color: #ffffff;
+  color: #e6f7ff !important; /* Very light blue-white for readability */
+  line-height: 1.6;
 }
 
+/* Links inside the text */
 section a {
   color: #00d4ff !important;
-  font-weight: bold;
+  text-decoration: underline;
 }
-
-section blockquote {
-  border-left: 4px solid #00d4ff;
-  color: #aabccd;
-  background: #001f33;
-  padding: 15px;
-  font-style: italic;
+section a:hover {
+  color: #ffffff !important;
+  text-decoration: none;
 }
