@@ -1,46 +1,71 @@
 ---
 ---
 
-/* First, import the original theme styles */
 @import "{{ site.theme }}";
 
-/* Define your new colors */
-$custom-dark-blue: #002c47; /* Background color from your image */
-$custom-cyan: #00d4ff;      /* Icon color from your image */
-
-/* Override the theme's header colors */
-.page-header {
-  /* Replace the blue-green gradient with your dark blue */
-  background-image: none;
-  background-color: $custom-dark-blue;
-  
-  /* Change main title and description text to cyan */
-  color: $custom-cyan;
+/* --- 1. SIDEBAR (Your Brand Identity) --- */
+header {
+  background-color: #002c47; /* Your Dark Blue */
+  border-right: 1px solid #001f33;
 }
 
-/* Ensure title and tagline are specifically cyan */
-.project-name, .project-tagline {
-  color: $custom-cyan !important;
+/* Make the title and description white so they pop against the blue */
+header h1, header h1 a {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
-/* Change the buttons at the top to match */
-.btn {
-  color: $custom-cyan;
-  border-color: $custom-cyan;
-  background-color: transparent;
+header p {
+  color: #e6f7ff; /* Soft white for description */
+  font-size: 1.1em;
 }
 
-/* Add a hover effect for the buttons */
-.btn:hover {
-  background-color: rgba(0, 212, 255, 0.15); /* Transparent cyan */
-  color: $custom-cyan;
-  border-color: $custom-cyan;
+/* Use your Cyan for the Sidebar Links */
+header a {
+  color: #00d4ff; /* Your Cyan */
+}
+header a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-/* Change generic links in the body to a darker blue/cyan for readability against white */
-a {
-  color: #008bad;
+/* Style the Logo */
+header img {
+  max-width: 150px;
+  border-radius: 50%; /* Makes the logo circular */
+  border: 3px solid #00d4ff; /* Cyan ring around logo */
+  margin-bottom: 20px;
 }
-a:hover {
-  color: $custom-dark-blue;
+
+/* --- 2. MAIN CONTENT AREA (Clean & Professional) --- */
+section {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #333; /* Dark Grey for easy reading */
+  line-height: 1.6;
+}
+
+/* Headings in the content */
+section h1, section h2, section h3 {
+  color: #002c47; /* Dark Blue headers */
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+
+/* Links in the text */
+section a {
+  color: #008bad; /* A darker, readable blue-cyan */
+  text-decoration: underline;
+}
+
+section a:hover {
+  color: #002c47;
+}
+
+/* Blockquotes (for your writing section) */
+blockquote {
+  color: #555;
+  border-left: 4px solid #00d4ff; /* Cyan accent line */
+  background: #f9f9f9;
+  font-style: italic;
 }
