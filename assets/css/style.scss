@@ -3,69 +3,41 @@
 
 @import "{{ site.theme }}";
 
-/* --- 1. SIDEBAR (Your Brand Identity) --- */
+/* FORCE SIDEBAR COLOR */
 header {
-  background-color: #002c47; /* Your Dark Blue */
-  border-right: 1px solid #001f33;
+  background-color: #002c47 !important;
+  border-right: 1px solid #002c47;
 }
 
-/* Make the title and description white so they pop against the blue */
-header h1, header h1 a {
-  color: #ffffff;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+/* Fix Text Colors on Sidebar */
+header h1, header h1 a, header p {
+  color: #ffffff !important;
 }
 
-header p {
-  color: #e6f7ff; /* Soft white for description */
-  font-size: 1.1em;
+/* Fix Link Colors on Sidebar (Cyan) */
+header ul a, header li a {
+  color: #00d4ff !important;
 }
 
-/* Use your Cyan for the Sidebar Links */
-header a {
-  color: #00d4ff; /* Your Cyan */
-}
-header a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/* Style the Logo */
+/* LOGO STYLING */
 header img {
-  max-width: 150px;
-  border-radius: 50%; /* Makes the logo circular */
-  border: 3px solid #00d4ff; /* Cyan ring around logo */
-  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 4px solid #00d4ff; /* Cyan Ring */
+  max-width: 180px;
+  margin-bottom: 1.5em;
 }
 
-/* --- 2. MAIN CONTENT AREA (Clean & Professional) --- */
+/* CONTENT AREA (Right Side) */
 section {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  color: #333; /* Dark Grey for easy reading */
-  line-height: 1.6;
+  color: #333333;
 }
 
-/* Headings in the content */
+/* Headings in the main text */
 section h1, section h2, section h3 {
-  color: #002c47; /* Dark Blue headers */
-  font-weight: 600;
-  margin-top: 1.5em;
-}
-
-/* Links in the text */
-section a {
-  color: #008bad; /* A darker, readable blue-cyan */
-  text-decoration: underline;
-}
-
-section a:hover {
   color: #002c47;
 }
 
-/* Blockquotes (for your writing section) */
-blockquote {
-  color: #555;
-  border-left: 4px solid #00d4ff; /* Cyan accent line */
-  background: #f9f9f9;
-  font-style: italic;
+/* Links in the main text */
+section a {
+  color: #008bad;
 }
