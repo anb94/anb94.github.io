@@ -4,3 +4,5 @@ description: Senior RA @ HKGI
 logo: /logo.png
 show_downloads: false
 google_analytics:
+plugins:
+  - jekyll-feed
