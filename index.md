@@ -5,11 +5,11 @@ title: Adam Bennett
 
 ## 👋 About Me
 
-I am a **Bioinformatics Postdoc** at the **City University of Hong Kong**.
+I am a **Senior RA** at the **Hong Kong Genome Institute**.
 
-My work bridges biology and data science. I currently focus on **network-based computational drug repositioning** for pancreatic ductal adenocarcinoma (PDAC) and am actively expanding into **single-cell data analysis**.
+My work bridges biology and data science. I currently focus on 
 
-[View my Publications](https://scholars.cityu.edu.hk/en/persons/anbennett2/) • [Connect on Threads](https://www.threads.com/@a.n.bennett)
+[View my Publications](https://openalex.org/authors/A5089329340) • [Connect on Threads](https://www.threads.com/@a.n.bennett)
 
 ---
 
