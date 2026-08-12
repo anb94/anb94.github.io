@@ -22,6 +22,15 @@ My work bridges biology and data science. I currently focus on **network-based c
 **Educational Resource.** A streamlined workflow designed for new students. It covers gene-level exploratory analysis and differential expression on lab servers.
 
 ---
+## Blog
+
+<ul>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.date | date: "%-d %B %Y" }} — {{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>
 
 ## ✍️ Writing
 
