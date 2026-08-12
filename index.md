@@ -7,7 +7,7 @@ title: Adam Bennett
 
 I am a **Senior RA** at the **Hong Kong Genome Institute**.
 
-My work bridges biology and data science. I currently focus on 
+My work bridges biology and data science. I am currently working on projects related genomic medicine.
 
 [View my Publications](https://openalex.org/authors/A5089329340) • [Connect on Threads](https://www.threads.com/@a.n.bennett)
 
