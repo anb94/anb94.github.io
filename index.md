@@ -32,8 +32,10 @@ My work bridges biology and data science. I am currently working on projects rel
 {% endfor %}
 </ul>
 
+---
 ## ✍️ Writing
 
 I run **[Bioinformatics Base](http://bioinformaticsbase.com)**, a platform dedicated to making bioinformatics simple and accessible.
 
 > "We're living through a revolution — the era where biology meets data science."
+---
