@@ -9,7 +9,7 @@ I am a **Senior RA** at the **Hong Kong Genome Institute**.
 
 My work bridges biology and data science. I am currently working on projects related genomic medicine.
 
-[View my Publications](https://orcid.org/my-orcid?orcid=0000-0001-8307-327X) • [Connect on Threads](https://www.threads.com/@a.n.bennett)
+[View my Publications](https://orcid.org/0000-0001-8307-327X) • [Connect on Threads](https://www.threads.com/@a.n.bennett)
 
 ---
 
